@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Article for a simple HTML only Website" />
+    <meta name="keywords" content="HTML, Frontend, roadmap.sh" />
+    <meta name="author" content="Faris S" />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Articles | Basic HTML Website</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="logo"><a href="index.html">FS</a></h1>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="article.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="toggle-theme">
+          <iconify-icon icon="circum:dark" class="dark-icon"></iconify-icon>
+          <iconify-icon icon="circum:light" class="light-icon"></iconify-icon>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Articles</h1>
+      </section>
+      <div class="articles-container">
+        <article class="card article">
+          <div class="article-image">
+            <img src="./images/semantic.png" alt="Semantic HTML" />
+          </div>
+          <div class="article-content">
+            <h2><a href="article.html">The Importance of semantic HTML </a></h2>
+            <p>A deep dive into why semantic HTML is crucial for accessibility and SEO.</p>
+          </div>
+        </article>
+        <article class="card article">
+          <div class="article-image">
+            <img src="./images/flexbox.png" alt=" Flexbox" />
+          </div>
+          <div class="article-content">
+            <h2><a href="article.html">Understanding Flexbox</a></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit.</p>
+          </div>
+        </article>
+        <article class="card article">
+          <div class="article-image">
+            <img src="./images/grid.png" alt="Grid Layout" />
+          </div>
+          <div class="article-content">
+            <h2><a href="article.html">Building responsive website using Grid</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, adipisci.</p>
+          </div>
+        </article>
+        <article class="card article">
+          <div class="article-image">
+            <img src="./images/semantic.png" alt=" Semantic HTML" />
+          </div>
+          <div class="article-content">
+            <h2><a href="article.html">The Importance of semantic HTML </a></h2>
+            <p>A deep dive into why semantic HTML is crucial for accessibility and SEO.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">&copy; all rights reserved 2025</footer>
+
+    <!-- Icon -->
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+
+    <!-- script -->
+    <script src="index.js"></script>
+  </body>
+</html>
