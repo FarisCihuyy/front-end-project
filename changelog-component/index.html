@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Changelog Component</title>
+  </head>
+  <body>
+    <main>
+      <section class="changelog-container">
+        <h1>Changelog</h1>
+        <p>Here's evrything we have shiped in the past fiew days</p>
+        <button id="toggle-theme">
+          <iconify-icon icon="circum:dark" class="dark-icon"></iconify-icon>
+          <iconify-icon icon="circum:light" class="light-icon"></iconify-icon>
+        </button>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">27 Ags 2024</div>
+            <div class="timeline-content">Single Page CV</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">24 Ags 2024</div>
+            <div class="timeline-content">HTML Only Website</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">20 Ags 2024</div>
+            <div class="timeline-content">Personal Portfolio</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">17 Ags 2024</div>
+            <div class="timeline-content">Changelog Component</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">12 Ags 2024</div>
+            <div class="timeline-content">Roadmap.sh</div>
+          </div>
+        </div>
+
+        <button class="add-new-changelog btn">Add New Changelog</button>
+      </section>
+    </main>
+
+    <!-- modal -->
+    <section class="modal">
+      <div class="modal-content">
+        <h2>New Changelog</h2>
+        <form class="form-container">
+          <div class="input-field">
+            <label for="content">Content</label>
+            <textarea id="content" rows="5" placeholder="Enter text here..." required></textarea>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="btn cancel-btn">Cancel</button>
+            <button type="submit" class="btn submit-btn">Add New</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ICONIFY -->
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
